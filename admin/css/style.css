@@ -1,0 +1,431 @@
+@font-face{
+	src: url('../fonts/monea_alegante/MoneaAlegante.otf');
+	font-family: "Monea";
+}
+
+@font-face{
+	src: url('../fonts/Raleway/Raleway-VariableFont_wght.ttf');
+	font-family: "Raleway";
+}
+
+@font-face{
+	src: url('../fonts/ZCOOL_XiaoWei/ZCOOLXiaoWei-Regular.ttf');
+	font-family: "ZCOOL";
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body,html,h1,h2,h3,h4,h5,h6,p{
+	margin: 0px;
+	padding: 0px;
+}
+
+img{
+	max-width: 100%;
+}
+
+main{
+	padding: 0px;
+}
+
+
+/******* LOGIN *******/
+
+.login-page{
+	background-image: url(../img/fundoContactar.png);
+}
+
+.login-page main{
+	width: 480px;
+	height: 480px;
+	background-color: rgba(0, 0, 0, 0.25);
+	padding: 20px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+    text-align: center;
+    border-radius: 50px;
+}
+
+.login-page form{
+	text-align: center;
+}
+
+.login-page input{
+	width: 90%;
+	height: 40px;
+	padding: 10px;
+	border: none;
+	margin-bottom: 20px;
+	color: black;
+	font-family: "Raleway";
+}
+
+.login-page img{
+	width: 100px;
+	position: relative;
+	margin: 0px auto 30px;
+}
+
+.login-page label{
+	width: 90%;
+	color: white;
+	font-family: "Raleway";
+	text-transform: uppercase;
+}
+
+.login-page input[type="submit"]{
+	width: 170px;
+	height: fit-content;
+	background-color: #8BC898;
+	border-radius: 20px;
+	font-family: "ZCOOL";
+	font-size: 25px;
+	color: white;
+	box-shadow: none;
+	border: 0px;
+	margin-top: 25px;
+}
+
+.login-page input[type="submit"]:hover{
+	background-color: #5EAA72;
+}
+
+
+/******* MENU *******/
+
+.sidebar{
+	background-color: #3F704C;
+	min-height: 100vh;
+	padding: 50px 20px;
+	position: relative;
+	z-index: 2;
+	position: fixed;
+	overflow-y: auto;
+	margin-left: 0px;
+	width: 16.6666666%;
+	border: none;
+}
+.sidebar img{
+	width: 100px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 30px;
+}
+
+.sidebar ul.menu-admin{
+	margin-top: 120px;
+	list-style: none;
+	padding-left: 0px;
+	border-top: 1px solid white;
+	width: 100%;
+	padding-right: 0px;
+	margin-right: 0px;
+}
+
+.sidebar ul.menu-admin li{
+	width: 100%;
+	display: block;
+	padding: 15px 5px;
+	border-bottom: 1px solid white;
+	color: white;
+	font-family: "Raleway";
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.sidebar ul.menu-admin li:hover .submenu-admin{
+	display: block;
+}
+
+.sidebar ul.menu-admin li a:hover{
+	text-decoration: none;
+}
+
+.sidebar ul.menu-admin li a{
+	color: white;
+	font-size: 15px;
+	line-height: 12px;
+	text-transform: uppercase;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.sidebar ul.menu-admin li ul.submenu-admin {
+	display: none;
+	background-color: #5EAA72;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 10px;
+}
+
+.sidebar ul.menu-admin li ul.submenu-admin li:last-child{
+	border-bottom: none;
+}
+
+.sidebar i{
+	font-size: 15px;
+	padding-right: 15px;
+}
+
+.cabecalho{
+	width: 100%;
+	background-color: #5EAA72;
+	padding: 15px;
+	padding-top: 20px;
+	text-align: right;
+	color: white;
+    height: 60px;
+    font-family: "Raleway";
+
+}
+.cabecalho span{
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.nopadding{
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-left: calc(16.66666667% - 0px);
+}
+
+
+
+/******* PÁGINAS *******/
+
+.page{
+	background-color: #ddd;
+}
+
+.pagina-geral{
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.pagina-geral h1{
+	margin-top: 25px;
+	margin-bottom: 5px;
+	font-size: 30px;
+	font-family: "ZCOOL";
+	text-transform: uppercase;
+}
+
+.pagina-geral h2{
+	padding-top: 20px;
+	font-size: 30px;
+	font-family: "ZCOOL";
+	color: #3F704C;
+	text-transform: uppercase;
+}
+
+.pagina-geral h6{
+	font-family: "Raleway";
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+
+.accoes-gerais{
+	padding-top: 25px;
+}
+
+.accoes-gerais a{
+	background: #8BC898;
+	padding: 10px;
+	text-transform: uppercase;
+	text-align: center;
+	border-radius: 8px;
+	font-size: 13px;
+	color: white;
+	display: inline-block;
+	border: 0px;
+	margin-right: 10px;
+}
+
+.accoes-gerais a:hover{
+	background: white;
+	color: #8BC898;
+	text-decoration: none;
+}
+
+.pagina-geral table{
+	width: 100%;
+	background: white;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+
+.pagina-geral table tr.head-line{
+	background-color: #3F704C;
+	font-family: "Raleway";
+	font-size: 15px;
+	text-transform: uppercase;
+}
+
+.pagina-geral table tr:nth-child(even){
+	background: whitesmoke;
+}
+
+.pagina-geral table tr td{
+	padding: 10px;
+	text-align: center;
+	font-family: "Raleway";
+	font-size: 15px;
+}
+.pagina-geral table tr th{
+	text-align: center;
+	padding: 15px;
+	color: white;
+}
+
+.pagina-geral a.apagar{
+	color: darkred;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;
+}
+.pagina-geral a.editar{
+	color: green;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.mensagens{
+	margin-top: 20px;
+}
+
+.nota{
+	font-family: "Raleway";
+	font-size: 12px;
+	margin-top: -20px;
+}	
+
+.padding-nota{
+	padding-bottom: 20px;
+}
+
+#editar{
+	padding-top: 0px;
+}
+
+
+/******* NOVO/EDITAR *******/
+
+.campos{
+	background-color: #ddd;
+  	padding-top: 30px;
+    font-family: "Raleway";
+    font-size: 15px;
+    color: black;
+}
+
+
+
+.form-controls{
+	margin-bottom: 20px;
+
+}
+
+.campos .form-controls input,
+.campos .form-controls label,
+.campos .form-controls select{
+	width: 100%;
+	height: 30px;
+}
+
+textarea{
+	width: 100%;
+	height: 300px;
+}
+
+.passos textarea{
+	height: 70px;
+}
+
+.origem{
+	margin-top: -20px;
+}
+
+.origem textarea{
+	height: 150px;
+}
+
+.conterImg{
+	width: 50px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.conterImgTable{
+	width: 50px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+
+.campos button{
+	background-color: #8bc898;
+	border: none;
+	width: 110px;
+	height: 40px;
+	border-radius: 10px;
+	font-size: 18px;
+	color: white;
+
+}
+
+.campos button:hover{
+	background-color: white;
+	color: #8bc898;
+}
+
+
+@media only screen and (max-width: 1440px) and (min-width: 1280px){
+
+}
+@media only screen and (max-width: 1280px) and (min-width: 1024px){
+
+}
+
+/******* FULL HD    ********/
+@media only screen and (max-width: 1920px) {
+
+}
+/******* Portatil Landscape    ********/
+@media only screen and (max-width: 1440px) {
+
+}
+/*******  HD    ********/
+@media only screen and (max-width: 1280px) {
+
+}
+/******* iPad Landscape    ********/
+@media only screen and (max-width: 1024px) {
+
+}
+/******* iPad Portrait    ********/
+@media only screen and (max-width: 768px) {
+
+}
+/******* iPhone Plus Landscape    ********/
+@media only screen and (max-width: 896px) {
+
+}
+/******* iPhone Plus Portrait    ********/
+@media only screen and (max-width: 414px) {
+
+}
+/******* iPhone <=5 Landscape    ********/
+@media only screen and (max-width: 580px) {
+
+}
+/******* iPhone <=5 Portrait    ********/
+@media only screen and (max-width: 320px) {
+
+}
